@@ -103,6 +103,33 @@ li {
     text-indent: -27px;
 }
 
+h4 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 70px auto;
+}
+
+.card-title {
+    padding-left: 20px;
+}
+
+.card-date {
+    border-right: 2px solid brown;
+    margin-right: -5px;
+    grid-row: span 2;
+    text-align: center;
+    align-self: center;
+}
+
+.card-text {
+    padding-left: 20px;
+    text-align: justify;
+}
+
 .footer {
     position: absoute;
     flex-basis: 100%;
