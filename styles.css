@@ -1,5 +1,6 @@
 * {
     color: rgba(40,43,45,255);
+    font-family: poppins, serif;
 }
 
 body {
@@ -15,19 +16,31 @@ a:hover {
     text-decoration: underline;
 }
 
+h1 {
+    color: #F5F5F5;
+    text-shadow: 1px 1px 2px black;
+}
+
 .header {
-    background-color: rgb(229,221,215);
+    background-color: #306397e7;
     margin-left: -3000px;
     margin-right: -40px;
     margin-top: -50px;
     text-indent: 3000px;
-    line-height: 200px;
+    line-height: 180px;
     height: 150px;
     z-index: -1;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: x-large;
+    font-weight: 700;
 }
 
 .left-bar {
-    border: 1.5px solid black;
+    border: 1.5px solid rgba(40,43,45,255);
     width: 275px;
     align-content: left;
     padding-left: 23px;
@@ -75,15 +88,16 @@ ul {
 }
 
 .icon {
-    background-color: rgba(224,216,212,255);
+    background-color: #306397;
     border-radius: 20%;
+    vertical-align: middle;
 }
 
 #phone,
 #website,
 #email {
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #text {
@@ -95,12 +109,12 @@ li {
 }
 
 .education,
-.skills,
-.awards {
-    background-color: rgba(224,216,212,255);
+.skills {
+    background-color: #237aa682;
     margin-right: 25px;
     margin-left: 30px;
     text-indent: -27px;
+    text-shadow: 1px 1px 2px white;
 }
 
 h4 {
@@ -118,7 +132,7 @@ h4 {
 }
 
 .card-date {
-    border-right: 2px solid brown;
+    border-right: 2px solid #306397;
     margin-right: -5px;
     grid-row: span 2;
     text-align: center;
@@ -139,10 +153,122 @@ h4 {
     margin-right: 30px;
 }
 
-@media (min-width: 640px) {
-
+h3, h4, {
+    font-size: large;
 }
 
-@media (min-width: 1024px) {
-    /*grid-template-columns: repeat(2, minmax(0, 1fr)); */
+h5, h6 {
+    margin-bottom: 0;
+}
+
+h5 {
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+h6 {
+    font-size: medium;
+    font-weight: 450;
+    margin-top: 0;
+}
+
+.header-m {
+    display: none;
+}
+
+@media (max-width: 481px) {
+   
+    .header {
+        display: none;
+    }
+
+    .header-m {
+        display: inline-block;
+        background-image: linear-gradient(#0068d0e7, #306397e7,#306397e7,#306397e7, #0068d0e7);
+        width: 100vw;
+        height: 124px;
+        margin-top: -30px;
+        margin-left: 0px;
+        text-indent: 160px;
+        line-height: 50px;
+    }
+    #sub-header {
+        display: none;
+    }
+
+    #sub-header-m {
+        display: block;
+        text-indent: 146px;
+        margin-top: -80px;
+        margin-bottom: 40px;
+        padding-left: 10px;
+    }
+
+    body {
+        display: grid;
+        margin-top: -30px;
+        right: 1rem;
+        padding-right: 0px;
+        border-right: 0px;
+        margin-right: 0px;
+        width: 99vw;
+        text-align: center;
+    }
+    
+    .profile-pic {
+        height: 120px;
+        margin-top: -20px;
+        margin-left: -14px;
+        margin-right: 400px;
+        display: inline-block;
+        margin-bottom: -100px;
+        align-self: left;
+    }
+
+    .left-bar {
+        height: 300px;
+        width: 100vw;
+        border: none;
+        margin-left: 5px;
+        padding: 0px;
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        display: block
+    }
+
+    .right-bar {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 12;
+        margin-left: 5px;
+        margin-top: 380px;
+        padding: 0px;
+        width: 95vw;
+        margin-right: 1rem;
+    }
+
+    .education {
+        text-align: justify;
+        margin-left: 190px;
+        width: 120px;
+    }
+
+    .skills {
+        width: 80px;
+        text-align: justify;
+        margin-left: 220px;
+        margin-top: 20px;
+    }
+
+    .education,
+    .skills,
+    .profile,
+    .work-experience {
+        margin-right: 0px;
+        border-right: 0px;
+        padding-right: 0px;
+    }
 }
